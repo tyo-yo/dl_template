@@ -49,5 +49,6 @@ COPY Pipfile.lock Pipfile.lock
 RUN pipenv install --dev
 
 EXPOSE 8888
+EXPOSE 11111
 
 ENTRYPOINT ["xonsh"]
