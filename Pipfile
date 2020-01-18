@@ -5,6 +5,14 @@ verify_ssl = true
 
 [dev-packages]
 jupyterlab = "*"
+torch = "*"
+numpy = "*"
+matplotlib = "*"
+bokeh = "*"
+pandas = "*"
+holoviews = "*"
+scikit-learn = "*"
+allennlp = "*"
 
 [packages]
 

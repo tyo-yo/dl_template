@@ -7,8 +7,8 @@
 -   [x] Docker
 -   [x] pipenv
     -   [x] 'a' to enter pipenv, 'd' to deactivate pipenv
--   [ ] Pre-installed python modules for deeplearning
-    -   [ ] pytorch, numpy, matplotlib, jupyterlab, pandas, holoviews, ...
+-   [x] Pre-installed python modules for deeplearning
+    -   [x] pytorch, numpy, matplotlib, jupyterlab, pandas, holoviews, ...
 -   [x] xonsh: Shell script with python
 -   [x] Useful commands
     -   [x] z: jump around
