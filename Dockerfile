@@ -50,4 +50,4 @@ RUN pipenv install --dev
 
 EXPOSE 8888
 
-# ENTRYPOINT ["xonsh"]
+ENTRYPOINT ["xonsh"]
