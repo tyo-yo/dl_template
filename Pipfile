@@ -13,6 +13,9 @@ pandas = "*"
 holoviews = "*"
 scikit-learn = "*"
 allennlp = "*"
+pytest = "*"
+pytest-cov = "*"
+pytest-randomly = "*"
 
 [packages]
 
