@@ -18,7 +18,7 @@
     -   [x] Ctrl+R: interactive history browsing
     -   [x] Ctrl+S: interactive ssh
     -   [x] micro: gui like text editor
--   [ ] Automatically upload image to Docker Hub
+-   [x] Automatically upload image to Docker Hub
 -   [ ] Automated tests with GitHub Actions
 -   [ ] Easily create & publish documentation with spinx + jupyter notebooks
 
