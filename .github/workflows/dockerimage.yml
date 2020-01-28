@@ -11,9 +11,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: Login to Docker Hub
-      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login docker.pkg.github.com -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
-
     - name: Docker Build
       run: docker-compose build
 
@@ -23,8 +20,9 @@ jobs:
     - name: Python code style test (flake8)
       run: docker-compose run --rm dl flake8 --show-source
 
-    - name: ls
-      run: docker images
-
-    - name: Push to Docker Hub
-      run: docker push tyoyo/dl
+    - name: Publish to Registry
+       uses: elgohr/Publish-Docker-Github-Action@master
+       with:
+        name: tyoyo/dl
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
