@@ -4,18 +4,19 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-jupyterlab = "*"
-torch = "*"
-numpy = "*"
-matplotlib = "*"
-bokeh = "*"
-pandas = "*"
-holoviews = "*"
-scikit-learn = "*"
-allennlp = "*"
 pytest = "*"
 pytest-cov = "*"
 pytest-randomly = "*"
+jupyterlab = "*"
+# torch = "*"
+# numpy = "*"
+# matplotlib = "*"
+# bokeh = "*"
+# pandas = "*"
+# holoviews = "*"
+# scikit-learn = "*"
+# allennlp = "*"
+flake8 = "*"
 
 [packages]
 

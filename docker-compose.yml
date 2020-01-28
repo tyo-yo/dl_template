@@ -4,8 +4,13 @@ services:
     build:
       context: .
       dockerfile: "Dockerfile"
+    command: bash
     volumes:
       - .:/app
+      - python-packages:/root/.local/share
     ports:
       - "8888:8888"
+      - "11111:11111"
     tty: true
+volumes:
+  python-packages:

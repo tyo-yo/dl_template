@@ -10,8 +10,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag tyoyo/dl:$(date +%s)
+
+    - name: Pytest
+      run: docker-compose run --rm pytest
+
+    - name: Python code style test (flake8)
+      run: docker-compose run --rm flake8 --show-source
+
+
     - name: Publish to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:

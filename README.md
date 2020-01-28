@@ -29,12 +29,15 @@
 ```shell
 $ git clone https://github.com/tyo-yo/dl_template.git
 $ docker-compose build
-$ docker-compose up -d
-$ docker-compose exec dl xonsh
 
-$ a
-using own xonsh alias function instead of pipenv shell. 'deactivate' or 'd' to exit virtualenv
+# Work on docker environment
+$ docker-compose run --rm dl bash
+$ docker-compose run --rm dl xonsh
 
-$ jupyter lab --port=8888 --ip=0.0.0.0 --no-browser --allow-root
+# Start jupyter server
+$ docker-compose run --rm -p 8888:8888 dl jupyter lab --port=8888 --ip=0.0.0.0 --no-browser --allow-root
+
+# Test
+$ docker-compose run --rm dl pytest
 ```
 
