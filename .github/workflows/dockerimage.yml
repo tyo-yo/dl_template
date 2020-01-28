@@ -11,8 +11,10 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: Build
+    - name: Docker Build
+      run: docker-compose build
       run: docker-compose up -d
+      run: docker-copose down
 
     - name: Pytest
       run: docker-compose run --rm dl pytest
