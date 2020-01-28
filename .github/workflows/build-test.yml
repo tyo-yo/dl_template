@@ -14,15 +14,21 @@ jobs:
     - name: Docker Build
       run: docker-compose build
 
+    - name: Docker Up
+      run: docker-compose up -d
+
     # - name: Pytest
     #   run: docker-compose run --rm dl pytest
 
-    - name: PyTest & publish code coverage
+    - name: Pytest
+      run: docker-compose exec dl pipenv run pytest
+
+    - name: Publish code coverage
       uses: paambaati/codeclimate-action@v2.4.0
       env:
         CC_TEST_REPORTER_ID: 4f72a5a47c399fd273c27accb86644eda941ab011122ce872205971c5d8ed378
       with:
-        coverageCommand: docker-compose run --rm dl pytest
+        coverageCommand: docker-compose exec dl pipenv run coverage report -m
         debug: true
 
     - name: Python code style test (flake8)
