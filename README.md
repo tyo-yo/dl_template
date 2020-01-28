@@ -1,6 +1,6 @@
 # dl_template
 
-![](https://github.com/tyo-yo/dl_template/workflows/Docker Build and Test CI/badge.svg)
+![](https://github.com/tyo-yo/dl_template/workflows/Build%20and%20Test/badge.svg)
 
 
 
