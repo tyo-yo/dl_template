@@ -15,10 +15,10 @@ jobs:
       run: docker-compose build
 
     - name: Pytest
-      run: docker-compose run --rm pytest
+      run: docker-compose run dl --rm pytest
 
     - name: Python code style test (flake8)
-      run: docker-compose run --rm flake8 --show-source
+      run: docker-compose run dl --rm flake8 --show-source
 
     # - name: Build the Docker image (docker)
     #   run: docker build . --file Dockerfile --tag tyoyo/dl:$(date +%s)
