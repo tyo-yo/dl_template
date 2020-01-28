@@ -11,8 +11,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
 
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag tyoyo/dl:$(date +%s)
+    - name: Build
+      run: docker-compose build
 
     - name: Pytest
       run: docker-compose run --rm pytest
@@ -20,10 +20,12 @@ jobs:
     - name: Python code style test (flake8)
       run: docker-compose run --rm flake8 --show-source
 
-
-    - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
-      with:
-        name: tyoyo/dl
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+    # - name: Build the Docker image (docker)
+    #   run: docker build . --file Dockerfile --tag tyoyo/dl:$(date +%s)
+    #
+    # - name: Publish to Registry
+    #   uses: elgohr/Publish-Docker-Github-Action@master
+    #   with:
+    #     name: tyoyo/dl
+    #     username: ${{ secrets.DOCKER_USERNAME }}
+    #     password: ${{ secrets.DOCKER_PASSWORD }}
