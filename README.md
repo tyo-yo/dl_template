@@ -1,5 +1,7 @@
 # dl_template
 
+![](https://github.com/tyo-yo/dl_template/workflows/build-test.yml/badge.svg)
+
 
 
 ## Features
