@@ -21,8 +21,8 @@ jobs:
       run: docker-compose run --rm dl flake8 --show-source
 
     - name: Publish to Registry
-       uses: elgohr/Publish-Docker-Github-Action@master
-       with:
+      uses: elgohr/Publish-Docker-Github-Action@master
+      with:
         name: tyoyo/dl
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
