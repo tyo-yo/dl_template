@@ -2,8 +2,6 @@
 
 ![](https://github.com/tyo-yo/dl_template/workflows/Build%20and%20Test/badge.svg) [![Maintainability](https://api.codeclimate.com/v1/badges/5e23e4bf99dafa1ad824/maintainability)](https://codeclimate.com/github/tyo-yo/dl_template/maintainability)[![Test Coverage](https://api.codeclimate.com/v1/badges/5e23e4bf99dafa1ad824/test_coverage)](https://codeclimate.com/github/tyo-yo/dl_template/test_coverage)[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
-http://dockeri.co/image/tyoyo/dl.co
-
 
 
 ## Features
