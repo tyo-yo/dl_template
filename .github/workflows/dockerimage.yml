@@ -13,8 +13,6 @@ jobs:
 
     - name: Docker Build
       run: docker-compose build
-      run: docker-compose up -d
-      run: docker-copose down
 
     - name: Pytest
       run: docker-compose run --rm dl pytest
