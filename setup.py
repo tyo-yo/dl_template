@@ -11,7 +11,7 @@ setup(
     author='Tomoaki Nakamura',
     author_email='nakamura213tomoaki@gmail.com',
     install_requires=['numpy'],
-    url='https://github.com/taro/SamplePackage',
+    url='https://github.com/tyo-yo/dl_template',
     license=license,
     packages=find_packages()
 )

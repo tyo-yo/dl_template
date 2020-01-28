@@ -41,3 +41,11 @@ $ docker-compose run --rm -p 8888:8888 dl jupyter lab --port=8888 --ip=0.0.0.0 -
 $ docker-compose run --rm dl pytest
 ```
 
+
+
+# Install
+
+```shell
+$ pip install git+https://github.com/tyo-yo/dl_template
+```
+
