@@ -12,7 +12,7 @@ jobs:
     - uses: actions/checkout@v1
 
     - name: Build
-      run: docker-compose build
+      run: docker-compose up -d
 
     - name: Pytest
       run: docker-compose run --rm dl pytest
