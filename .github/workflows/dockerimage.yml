@@ -20,12 +20,6 @@ jobs:
     - name: Python code style test (flake8)
       run: docker-compose run --rm dl flake8 --show-source
 
-    # - name: Build the Docker image (docker)
-    #   run: docker build . --file Dockerfile --tag tyoyo/dl:$(date +%s)
-    #
-    # - name: Publish to Registry
-    #   uses: elgohr/Publish-Docker-Github-Action@master
-    #   with:
-    #     name: tyoyo/dl
-    #     username: ${{ secrets.DOCKER_USERNAME }}
-    #     password: ${{ secrets.DOCKER_PASSWORD }}
+    - name: Push to Docker Hub
+      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login docker.pkg.github.com -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+      run: docker-compose push

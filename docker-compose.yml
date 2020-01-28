@@ -11,6 +11,7 @@ services:
     ports:
       - "8888:8888"
       - "11111:11111"
+    image: tyoyo/dl
     tty: true
 volumes:
   python-packages:
