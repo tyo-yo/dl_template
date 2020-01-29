@@ -14,17 +14,17 @@ jobs:
     - name: Docker Build
       run: docker-compose build
 
-    - name: Before scripts for publishing coverage
+    - name: Setup for publishing coverage
       run: |
         curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
         chmod +x ./cc-test-reporter
-        ./cc-test-reporter before-build
+        docker-compose run --rm dl ./cc-test-reporter before-build
 
     - name: Pytest
       run: docker-compose run --rm dl pytest --cov-report xml
 
     - name: Publish code coverage
-      run: ./cc-test-reporter after-build -t coverage.py -r ${{ secrets.CODECLIMATE_TEST_REPORTER_ID }}
+      run: docker-compose run --rm dl ./cc-test-reporter after-build -t coverage.py -r ${{ secrets.CODECLIMATE_TEST_REPORTER_ID }}
 
     # - name: Pytest & publish code coverage
     #   uses: paambaati/codeclimate-action@v2.4.0
