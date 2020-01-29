@@ -22,7 +22,7 @@
     -   [x] micro: gui like text editor
 -   [x] Automatically upload image to Docker Hub
 -   [x] Automated tests with GitHub Actions
--   [ ] Easily create & publish documentation with spinx + jupyter notebooks
+-   [x] Easily create & publish documentation with sphinx + jupyter notebooks
 
 
 
@@ -41,6 +41,10 @@ $ docker-compose run --rm -p 8888:8888 dl jupyter lab --port=8888 --ip=0.0.0.0 -
 
 # Test
 $ docker-compose run --rm dl pytest
+
+# Make documentation
+$ cd docs
+$ make html
 ```
 
 
