@@ -16,6 +16,9 @@ Welcome to dl_template's documentation!
    /sample/sample2
    /sample/sample3
 
+   mymodule
+
+
 Indices and tables
 ==================
 
