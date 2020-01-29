@@ -20,6 +20,8 @@ flake8 = "*"
 sphinx = "*"
 numpy = "*"
 sphinx-rtd-theme = "*"
+commonmark = "*"
+recommonmark = "*"
 
 [packages]
 

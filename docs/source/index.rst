@@ -13,6 +13,7 @@ Welcome to dl_template's documentation!
    :numbered:
 
    /sample/sample1
+   /sample/sample2
 
 Indices and tables
 ==================
