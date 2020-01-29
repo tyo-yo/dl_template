@@ -43,8 +43,7 @@ $ docker-compose run --rm -p 8888:8888 dl jupyter lab --port=8888 --ip=0.0.0.0 -
 $ docker-compose run --rm dl pytest
 
 # Make documentation
-$ cd docs
-$ make html
+$ docker-compose run --rm dl bash -c "cd docs && make html"
 ```
 
 
