@@ -1,3 +1,4 @@
 def add(x, y):
-    x = 1
+    if x < 0:
+        print('hoge')
     return x + y
