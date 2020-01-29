@@ -33,7 +33,10 @@ release = '0.0.1'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = []
+extensions = [
+    'nbsphinx',
+    'sphinx.ext.mathjax',
+]
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -48,7 +51,7 @@ language = 'ja'
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = []
+exclude_patterns = ['_build', '**.ipynb_checkpoints']
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -68,6 +71,7 @@ html_static_path = ['_static']
 
 
 # -- Options for Markdown  ---------------------------------------------------
+# c.f. https://qiita.com/pashango2/items/d1b379b699af85b529ce
 
 source_suffix = ['.rst', '.md']
 source_parsers = {

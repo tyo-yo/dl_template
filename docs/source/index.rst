@@ -14,6 +14,7 @@ Welcome to dl_template's documentation!
 
    /sample/sample1
    /sample/sample2
+   /sample/sample3
 
 Indices and tables
 ==================

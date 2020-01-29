@@ -22,6 +22,7 @@ numpy = "*"
 sphinx-rtd-theme = "*"
 commonmark = "*"
 recommonmark = "*"
+nbsphinx = "*"
 
 [packages]
 

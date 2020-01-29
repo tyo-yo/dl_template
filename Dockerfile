@@ -33,6 +33,9 @@ RUN git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && \
 # install bash-completion
 RUN apt update && apt install -y bash-completion
 
+# install pandoc
+RUN apt update && apt install -y pandoc
+
 # install micro
 WORKDIR /root
 RUN curl https://getmic.ro | bash && \
