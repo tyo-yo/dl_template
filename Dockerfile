@@ -28,10 +28,14 @@ RUN apt update && \
 
 # install fzf
 RUN git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf && \
-    ~/.fzf/install
+    ~/.fzf/install && \
+    cp ~/.fzf/bin/* /usr/local/bin
 
 # install bash-completion
 RUN apt update && apt install -y bash-completion
+
+# install pandoc
+RUN apt update && apt install -y pandoc
 
 # install micro
 WORKDIR /root
