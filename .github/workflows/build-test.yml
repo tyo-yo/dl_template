@@ -37,7 +37,7 @@ jobs:
     - name: Python code style test (flake8)
       run: docker-compose run --rm dl flake8 --show-source
 
-    - name: Publish to Registry
+    - name: Publish Docker image to DockerHub
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
         name: tyoyo/dl
