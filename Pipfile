@@ -17,6 +17,9 @@ jupyterlab = "*"
 # scikit-learn = "*"
 # allennlp = "*"
 flake8 = "*"
+sphinx = "*"
+numpy = "*"
+sphinx-rtd-theme = "*"
 
 [packages]
 
