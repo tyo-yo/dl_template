@@ -60,3 +60,5 @@ $ pip install git+https://github.com/tyo-yo/dl_template
 
 [Docs is here ! (Github Pages)](https://tyo-yo.github.io/dl_template/)
 
+[Pseudo private online docs (netlify)](https://dl-template-saefrru138t23edi5ngbivsziue8fakorwpesr9i084nva83ovn.netlify.com)
+
