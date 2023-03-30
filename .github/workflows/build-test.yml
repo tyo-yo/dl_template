@@ -30,7 +30,7 @@ jobs:
       run: docker-compose run --rm dl flake8 --show-source
 
     - name: Publish Docker image to DockerHub
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       with:
         name: tyoyo/dl
         username: ${{ secrets.DOCKER_USERNAME }}
